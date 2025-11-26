@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Young at Heart
+
+**Young at Heart** is an AI-powered web application that lets you see into the future. Upload a photo of yourself, choose how you want to age, and let our time machine (powered by Replicate and Google's Nano Banana Pro model) do the rest.
+
+## Features
+
+-   **Photo Upload**: Easily upload your current selfie.
+-   **Customizable Aging**:
+    -   **Age**: Choose from "Just a wee bit older" to "Ancient".
+    -   **Quality**: Decide if you've aged like fine wine or... milk.
+    -   **Life Events**: Add backstory elements like a "Rebellion stage" or a "Hard life" to influence the generation.
+-   **AI Generation**: Uses the `google/nano-banana-pro` model on Replicate for high-quality, photorealistic aging effects.
+
+## Tech Stack
+
+-   [Next.js](https://nextjs.org/) (App Router)
+-   [Replicate API](https://replicate.com/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   TypeScript
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+1.  **Replicate API Token**: You need an API token from [Replicate](https://replicate.com/).
+2.  **Node.js**: Ensure you have Node.js installed.
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/young-at-heart.git
+    cd young-at-heart
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Set up environment variables:
+    Create a `.env.local` file in the root directory and add your Replicate API token:
+    ```bash
+    REPLICATE_API_TOKEN=r8_...
+    ```
+
+### Running the App
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:4001](http://localhost:4001) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **Note**: This project is configured to run on port **4001** by default.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
